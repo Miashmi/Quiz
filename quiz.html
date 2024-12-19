@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quizzes</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Quizieeeee</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Facts</a></li>
+                <li><a href="#">Stories</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+               
+            </div>
+        </nav>
+    </header>
+    <video autoplay muted loop id="background-video">
+        <source src="./images/WhatsApp Video 2024-06-14 at 6.50.26 PM.mp4" type="video/mp4">
+    </video>
+
+    <div class="quiz-container">
+        <h1>Quizieeeee</h1>
+        <main>
+        <div class="quiz-choice-container">
+            <button onclick="startQuiz('career')">Which Career Suits You Best?</button>
+            <button onclick="startQuiz('wouldYouRather')">Would You Rather</button>
+            <button onclick="startQuiz('city')">Which City Suits Your Style?</button>
+            <button onclick="startQuiz('fruit')">Choose Your Meals For The Day</button>
+        </div>
+        <div class="question-container" id="question-container"></div>
+        <div id="result-container" class="result-container">
+            
+        </div>
+        <button id="home-button" onclick="showHome()">Choose Another Quiz</button>
+    </div> </main>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+
+
